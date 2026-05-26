@@ -11,7 +11,8 @@
 ## Contenido
 
 - [Clase 1](./clase_1/clase-1.md) 
-
+    - [Codigo clase 1](./clase_1/codigo)
+    - [Pizarra clase 1](./clase_1/clase_1cpp.excalidraw)
 
 
 ## Para los diagramas y dibujos
