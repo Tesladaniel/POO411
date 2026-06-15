@@ -335,3 +335,87 @@ public:
     }
 };
 ```
+---
+
+# Multiples Archivos Fuente
+
+![bg  left:30% width:100% ](./imagenes/multi_fuente.png)
+
+```cpp
+// Persona.h
+#pragma once
+
+#include <string>
+
+class Persona {
+    std::string nombre;
+    int edad;
+
+public:
+    Persona(std::string n, int e);
+    void saludar();
+};
+```
+
+---
+# Multiples Archivos Fuente
+
+![bg  left:30% width:100% ](./imagenes/multi_fuente.png)
+
+```cpp
+// Persona.cpp
+#include "Persona.h"
+#include <iostream>
+
+Persona::Persona(std::string n, int e) {
+    this->nombre = n;
+    this->edad = e;
+}
+
+void Persona::saludar() {
+    std::cout << "Hola, soy "
+              << nombre
+              << " y tengo "
+              << edad
+              << " años."
+              << std::endl;
+}
+```
+
+---
+# Multiples Archivos Fuente
+
+![bg  left:30% width:100% ](./imagenes/multi_fuente.png)
+
+```cpp
+// main.cpp
+#include "Persona.h"
+
+int main() {
+    Persona persona("Juan", 20);
+    persona.saludar();
+    return 0;
+}
+```
+
+---
+
+# Compilación
+
+
+![bg  left:30% width:100% ](./imagenes/compilacion_multi_fuente.png)
+
+Antes, con un único archivo:
+
+```bash
+clang++ main.cpp -o programa
+```
+
+Ahora, con múltiples archivos fuente:
+
+```bash
+clang++ main.cpp Persona.cpp -o programa
+```
+
+---
+
