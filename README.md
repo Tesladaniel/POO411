@@ -13,7 +13,8 @@
 - [Clase 1](./clase_1/clase-1.md) 
     - [Codigo clase 1](./clase_1/codigo)
     - [Pizarra clase 1](./clase_1/clase_1cpp.excalidraw)
-
+- [Clase 2](./clase_2/clase-2.md) 
+    - [Codigo clase 2](./clase_2/codigo)
 
 ## Para los diagramas y dibujos
 
